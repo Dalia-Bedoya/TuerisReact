@@ -1,0 +1,241 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    margin: auto;
+  }
+  .logo-img {
+    width: 226px;
+    height: 188px;
+  }
+  #logo{
+    cursor: pointer;
+  }
+  header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+  }
+  header li a {
+    display: grid;
+    place-items: center;
+    width: 132px;
+    height: 39px;
+    text-align: center;
+    border-radius: 20px;
+    background: #a4d2d3;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  header a:hover {
+    background: transparent;
+    color: #a4d2d3;
+    border: 3px solid #a4d2d3;
+  }
+  /* seccion1 */
+  .main {
+    background-color: #a4d2d3;
+  }
+  .btn-com {
+    padding: 5px 15px 5px 15px;
+    background: #fff;
+    color: #a4d2d3;
+  }
+  .btn-com:hover {
+    background: transparent;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+  }
+  .portada {
+    width: 400px;
+    height: 347px;
+  }
+  
+  /* secciondos */
+  .seccionDos {
+    background-color: #f3efe9;
+  }
+  .text-2{
+    width: 650px;
+  }
+  /* seccionCuatro */
+  .seccionCuatro {
+    background-color: #a4d2d3;
+    padding: 100px;
+  }
+  
+  .seccionCinco {
+    background-color: #f3efe9;
+  }
+  .hover {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .hover:hover {
+    transform: scale(1.1);
+  }
+  .correo{
+    width: 280px;
+  }
+  /* footer */
+  .foo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .redes{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-weight: 600;
+  }
+  .red{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+  .autor {
+    font-weight: 600;
+  }
+  
+  /* scrooll */
+  #scrollup {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #scrollup:hover {
+    background-color: #a4d2d3;
+    color: #000000;
+  }
+  .menuHambur {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+  
+  /* movil */
+  @media screen and (max-width: 567px) {
+    header nav ul{
+      display: none;
+    }
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .logo-img {
+      width: 167px;
+      height: 142px;
+      margin-top: 30px;
+    }
+    .menuHambur {
+      display: block;
+      cursor: pointer;
+      padding: 20px;
+      align-items: center;
+    }
+  
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a4d2d3;
+      z-index: 1;
+    }
+  
+    .menuItems {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .menuItems li {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .menuItems li a {
+      color: white;
+    }
+    .menuItems li a:hover {
+      color: rgb(18, 92, 102);
+    }
+    nav {
+      display: none;
+    }
+  
+    .portada{
+      display: none;
+    }
+    .text-2{
+      width: 450px;
+      padding: 20px;
+    }
+    .happy{
+      width: 400px;
+    }
+    #scrollup {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: #000000;
+      color: white;
+      font-size: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    #scrollup:hover {
+      background-color: #a4d2d3;
+      color: #000000;
+    }
+    .desapred{
+      display: none;
+  }
+  .foo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 600;
+  }
+  }
